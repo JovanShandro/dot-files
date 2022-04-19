@@ -1,0 +1,36 @@
+snippet if "If in svelte" b
+{#if $1}
+	$2
+{/if}
+$3
+endsnippet
+
+snippet elif "Else if in svelte" b  
+{:else if $1}
+	$2
+$3
+endsnippet
+
+snippet else "Else in svelte" b
+{:else $1}
+	$2
+$3
+endsnippet
+
+snippet each "Each loop in svelte" b
+{#each $1 as $2}
+	$3
+{/each}
+$4
+endsnippet
+
+snippet svelte "Basic svelte setup" b
+<script>
+	$1
+</script>
+
+$2
+
+<style>
+</style>
+endsnippet
